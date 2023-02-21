@@ -12,6 +12,11 @@
 
 [N0 V0w3ls](https://cs50.harvard.edu/x/2023/problems/2/no-vowels/), for practice with strings, command-line arguments, and writing an entire program from scratch.
 
+- `cd`
+- `mkdir no-vowels`
+- `cd no-vowels`
+- `wget https://cdn.cs50.net/2022/fall/labs/2/no-vowels.c `
+
 [Password](https://cs50.harvard.edu/x/2023/problems/2/password/), for practice iterating through a string, using the ctype library, and using Boolean variables.
 
 ---
