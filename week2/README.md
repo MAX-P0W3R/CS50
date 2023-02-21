@@ -4,36 +4,39 @@
 
 ### Practice problems
 [Hours](https://cs50.harvard.edu/x/2023/problems/2/hours/), for practice with arrays, passing arrays as parameters to a function, integer division and type casting.
-
-- `cd`
-- `mkdir hours`
-- `cd hours`
-- `wget https://cdn.cs50.net/2022/fall/labs/2/hours.c`
+```
+cd
+mkdir hours
+cd hours
+wget https://cdn.cs50.net/2022/fall/labs/2/hours.c
+```
 
 [N0 V0w3ls](https://cs50.harvard.edu/x/2023/problems/2/no-vowels/), for practice with strings, command-line arguments, and writing an entire program from scratch.
-
-- `cd`
-- `mkdir no-vowels`
-- `cd no-vowels`
-- `wget https://cdn.cs50.net/2022/fall/labs/2/no-vowels.c `
+```
+cd
+mkdir no-vowels
+cd no-vowels
+wget https://cdn.cs50.net/2022/fall/labs/2/no-vowels.c 
+```
 
 [Password](https://cs50.harvard.edu/x/2023/problems/2/password/), for practice iterating through a string, using the ctype library, and using Boolean variables.
-
-- `cd`
-- `mkdir password`
-- `cd password`
-- `wget https://cdn.cs50.net/2022/fall/labs/2/password.c`
+```
+cd
+mkdir password
+cd password
+wget https://cdn.cs50.net/2022/fall/labs/2/password.c
+```
 
 ---
 
 ### Lab2
-[Scarabble](https://cs50.harvard.edu/x/2023/labs/2/)
+[Scrabble](https://cs50.harvard.edu/x/2023/labs/2/)
 ```
 wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip
 unzip scrabble.zip
 rm scrabble.zip
-cd scarbble
-code scarbble.c
+cd scrabble
+code scrabble.c
 ```
 
 ---
