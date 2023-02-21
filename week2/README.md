@@ -19,6 +19,11 @@
 
 [Password](https://cs50.harvard.edu/x/2023/problems/2/password/), for practice iterating through a string, using the ctype library, and using Boolean variables.
 
+- `cd`
+- `mkdir password`
+- `cd password`
+- `wget https://cdn.cs50.net/2022/fall/labs/2/password.c`
+
 ---
 
 ### Lab2
