@@ -28,6 +28,13 @@
 
 ### Lab2
 [Scarabble](https://cs50.harvard.edu/x/2023/labs/2/)
+```
+wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip
+unzip scrabble.zip
+rm scrabble.zip
+cd scarbble
+code scarbble.c
+```
 
 ---
 
