@@ -34,6 +34,24 @@ Your program should then read the rest of the data from the WAV file, one 16-bit
 You may assume that the WAV file will use 16-bit signed values as samples. In practice, WAV files can have varying numbers of bits per sample, but we’ll assume 16-bit samples for this lab.
 Your program, if it uses malloc, must not leak any memory.
 
+Hints
+
+You’ll likely want to create an array of bytes to store the data from the WAV file header that you’ll read from the input file. Using the uint8_t type to represent a byte, you can create an array of n bytes for your header with syntax like
+uint8_t header[n];
+replacing n with the number of bytes. You can then use header as an argument to fread or fwrite to read into or write from the header.
+
+You’ll likely want to create a “buffer” in which to store audio samples that you read from the WAV file. Using the int16_t type to store an audio sample, you can create a buffer variable with syntax like
+int16_t buffer;
+You can then use &buffer as an argument to fread or fwrite to read into or write from the buffer. (Recall that the & operator is used to get the address of the variable.)
+
+You may find the documentation for fread and fwrite helpful here.
+In particular, note that both functions accept the following arguments:
+ptr: a pointer to the location in memory to store data (when reading from a file) or from which to write data (when writing data to a file)
+size: the number of bytes in an item of data
+nmemb: the number of items of data (each of size bytes) to read or write
+stream: the file pointer to be read from or written to
+Per its documentation, fread will return the number of items of data successfully read. You may find this useful to check for when you’ve reached the end of the file!
+
 ## Lab 4 - Smiley
 - Learn how to work with images
 - Practice manipulating pixels
