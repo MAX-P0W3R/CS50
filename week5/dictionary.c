@@ -17,7 +17,7 @@ typedef struct node
 }
 node;
 
-// TODO: Choose number of buckets in hash table
+// TODONE: Choose number of buckets in hash table
 const unsigned int N = 26;
 
 // Hash table
@@ -30,7 +30,7 @@ unsigned int hash_value;
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
+    // TODONE
     hash_value = hash(word);
     node *cursor = table[hash_value];
     while (cursor != 0)
@@ -48,7 +48,7 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    // TODO: Improve this hash function
+    // TODONE: Improve this hash function
     unsigned long total = 0;
     for (int i = 0; i < strlen(word); i++)
     {
@@ -60,7 +60,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    // TODO: Open dictionary
+    // TODONE: Open dictionary
     FILE *file = fopen(dictionary, "r");
     // Return NUll if file cannot be opened
     if (file == NULL)
@@ -70,7 +70,7 @@ bool load(const char *dictionary)
     }
 
     // Declare variable called word
-    char word[LENGTH+1];
+    char word[LENGTH +1 ];
     // Scan dictionary for strings until EOF
     while (fscanf(file, "%s", word) != EOF)
     {
@@ -95,7 +95,7 @@ bool load(const char *dictionary)
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-    // TODO
+    // TODONE
     if (word_count > 0)
     {
         return word_count;
@@ -106,7 +106,7 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
+    // TODONE
     for (int i = 0; i < N; i++)
     {
         node *cursor = table[i];
@@ -116,10 +116,11 @@ bool unload(void)
             cursor = cursor->next;
             free(tmp);
         }
-        if (cursor == NULL)
+        
+        if (cursor == NULL && i == N - 1)
         {
-            return true;
+            return true; // Everything was successfully freed
         }
     }
-    return false;
+    return false; // Error
 }
