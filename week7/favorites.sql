@@ -18,21 +18,12 @@ UPDATE shows SET title = "The Crown" WHERE title LIKE "The Crown";
 UPDATE shows SET title = "The Office" WHERE title LIKE "The Office";
 UPDATE shows SET title = "The Queen's Gambit" WHERE title LIKE "The Queen's Gambit";
 UPDATE shows SET title = "The Untamed" WHERE title LIKE "The Untamed";
-
 UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "B99";
 UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "Brooklyn%";
-
 UPDATE shows SET title = "Game of Thrones" WHERE title LIKE "GoT";
-
 UPDATE shows SET title = "Grey's Anatomy" WHERE title LIKE "Grey%";
-
 UPDATE shows SET title = "It's Always Sunny in Philidelphia" WHERE title LIKE "%Philidelphia";
-
 UPDATE shows SET title = "Parks and Recreation" WHERE title LIKE "Parks and Rec";
-
 UPDATE shows SET title = "The Office" WHERE title LIKE "Office";
-
-
-
 
 SELECT * FROM shows ORDER BY title;
