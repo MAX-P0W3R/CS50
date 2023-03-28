@@ -1,1 +1,99 @@
 <!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Jets</title>
+        <script>
+            function blinkr()
+            {
+                let arrowr = document.querySelector('#arrowright');
+                if (arrowr.style.visibility === 'hidden')
+                {
+                    arrowr.style.visibility = 'visible';
+                }
+                else
+                {
+                    arrowr.style.visibility = 'hidden';
+                }
+            }
+            function blinkl()
+            {
+                let arrowl = document.querySelector('#arrowleft');
+                if (arrowl.style.visibility === 'hidden')
+                {
+                    arrowl.style.visibility = 'visible';
+                }
+                else
+                {
+                    arrowl.style.visibility = 'hidden';
+                }
+            }
+            window.setInterval(blinkr,600);
+            window.setInterval(blinkl,600);
+        </script>
+    </head>
+    <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="images.html">Images</a></li>
+              <li class="breadcrumb-item"><a href="sales.html">Sales</a></li>
+            </ol>
+          </nav>
+          <img src="hanger.jpeg" alt="Airplane Hanger" class="image">
+          <h1 class="bluetext"><b>Data</b></h1>
+
+          <h2 class="blacktext"><br><b>Aircraft Specifications</b></h2>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Year built</th>
+                <th scope="col">Top Speed</th>
+                <th scope="col">Link for more Information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Bell X-2 Starbuster</th>
+                <td>USA</td>
+                <td>1955</td>
+                <td>Mach 3.196</td>
+                <td><a href="https://migflug.com/jetflights/the-10-fastest-aircraft-in-the-world/">migflug.com</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Mikoyan MiG-25 Foxbat</th>
+                <td>Soviet</td>
+                <td>1964</td>
+                <td>Mach 3.2</td>
+                <td><a href="https://migflug.com/jetflights/the-10-fastest-aircraft-in-the-world/">migflug.com</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Lockheed YF-12</th>
+                <td>USA</td>
+                <td>1965</td>
+                <td>Mach 3.35</td>
+                <td><a href="https://migflug.com/jetflights/the-10-fastest-aircraft-in-the-world/">migflug.com</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Lockheed SR-71 Blackbird</th>
+                <td>USA</td>
+                <td>1966</td>
+                <td>Mach 3.6</td>
+                <td><a href="https://migflug.com/jetflights/the-10-fastest-aircraft-in-the-world/">migflug.com</a></td>
+              </tr>
+              <tr>
+                <th scope="row">North American X-15</th>
+                <td>USA</td>
+                <td>1967</td>
+                <td>Mach 6.70</td>
+                <td><a href="https://migflug.com/jetflights/the-10-fastest-aircraft-in-the-world/">migflug.com</a></td>
+              </tr>
+
+            </tbody>
+          </table>
+    </body>
+</html>
