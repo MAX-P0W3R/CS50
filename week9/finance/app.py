@@ -54,14 +54,14 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    rows = db.execute("SELECT stmbol, SUM(shares) FROM transactions WHERE user_id=:user_id GROUP BY symbol HAVING SUM(shares) > 0", user_id=session["user_id"])
+    rows = db.execute("SELECT symbol, SUM(shares) FROM transactions WHERE user_id=:user_id GROUP BY symbol HAVING SUM(shares) > 0", user_id=session["user_id"])
 
     # Create a space to save the data
     holdings = []
     all_total = 0
 
     for row in rows:
-        stock = lookup(row['symbol'])
+        stock = lookup(row["symbol"])
         sum_value = (stock["price"] * row["SUM(shares)"])
         holdings.append({"symbol": stock["symbol"], "name": stock["name"], "shares": row["SUM(shares)"], "price": usd(stock["price"]), "total": usd(sum_value)})
         all_total += stock["price"] * row["SUM(shares)"]
